@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-links li {
+  margin: 0 15px;
+}
+
+header .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Slider Section */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.slider-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+main h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.library-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.library-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.library-item img {
+  width: 100%;
+  height: auto;
+}
+
+.library-item h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.library-item p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
