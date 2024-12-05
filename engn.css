@@ -1,0 +1,174 @@
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(120deg, #2E2E38, #3E4E50, #1C1C28);
+    color: #EDEDED;
+  }
+  
+  header {
+    background: linear-gradient(to bottom, #1C1C28 0%, #3E4E50 100%);
+    color: #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', serif;
+    color: #FFD700;
+  }
+  
+  header .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .nav-links li {
+    margin: 0 15px;
+  }
+  
+  header .nav-links a {
+    text-decoration: none;
+    color: #EDEDED;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  header .nav-links a:hover {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+  }
+  
+  /* Main sara samaan iske under */
+  main {
+    padding: 2rem;
+  }
+  
+  main h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #FFD700;
+  }
+  
+  .library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .library-item {
+    background: #2E2E38;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .library-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .library-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #FFD700;
+  }
+  
+  .library-item h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #EDEDED;
+  }
+  
+  .library-item p {
+    font-size: 0.9rem;
+    color: #B0B0B0;
+  }
+  
+
+
+
+  footer {
+    text-align: center;
+    background-color: #1C1C28;
+    color: #EDEDED;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+
+  /* Dropdown Menu ke liye */
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #EDEDED;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #3E4E50;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2E2E38;
+    border: 1px solid #FFD700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    min-width: 150px;
+  }
+  
+  .dropdown-menu li {
+    border-bottom: 1px solid #FFD700;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px 15px;
+    display: block;
+    color: #EDEDED;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #3E4E50;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
