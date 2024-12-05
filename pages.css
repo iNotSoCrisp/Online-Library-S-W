@@ -72,8 +72,8 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: black;
+    border: 1px solid black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     list-style: none;
