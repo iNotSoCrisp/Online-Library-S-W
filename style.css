@@ -47,25 +47,47 @@ header .nav-links a:hover {
 .slider {
   width: 100%;
   overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
   position: relative;
+  margin: auto;
 }
 
 .slider-container {
   display: flex;
-  animation: slide 10s infinite;
+  width: calc(375px * 10); /* Total width for 5 original + 5 duplicate images */
+  animation: scroll 20s linear infinite; /* Smooth animation */
+}
+
+.slider-container a {
+  flex-shrink: 0; /* Prevent shrinking of items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px; /* Fixed width for each item */
+  height: 500px; /* Fixed height for each item */
 }
 
 .slider-container img {
-  width: 100%;
-  max-height: 400px;
+  width: 375px;
+  height: 500px;
   object-fit: cover;
+  display: block;
 }
 
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
+/* Smooth scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-375px * 5)); /* Scroll through one full set of images */
+  }
+}
+
+/* Pause animation on hover */
+.slider:hover .slider-container {
+  animation-play-state: paused;
 }
 
 /* Main Content */
@@ -213,7 +235,8 @@ background-color: #f9f9f9;
   }
 
   .slider-container img {
-    max-height: 250px;
+    width: 375px; /* Fixed width for each item */
+  height: 500px;
   }
 
   main {
@@ -318,4 +341,3 @@ display: block;
 .login-btn:hover {
   background-color: #f39c12;
 }
-
