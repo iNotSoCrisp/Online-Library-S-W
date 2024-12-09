@@ -235,7 +235,8 @@ background-color: #f9f9f9;
   }
 
   .slider-container img {
-    max-height: 250px;
+    width: 375px; /* Fixed width for each item */
+  height: 500px;
   }
 
   main {
