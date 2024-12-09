@@ -234,9 +234,23 @@ background-color: #f9f9f9;
     margin: 0;
   }
 
-  .slider-container img {
-    aspect-ratio: 375/500;
+  .slider-container {
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Adjust automatically to content */
+    animation: scroll 15s linear infinite; /* Adjust speed if needed */
   }
+
+  .slider-container a {
+    width: 90vw; /* Slightly smaller than full width for padding */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .slider-container img {
+    width: 90vw; /* Same as anchor width */
+    height: auto; /* Maintain image proportions */
+    object-fit: contain; /* Ensure image fits within the given space */
+  }
+
 
   main {
     padding: 1rem;
