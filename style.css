@@ -186,6 +186,80 @@ color: black;
 background-color: #f9f9f9;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  header .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header .nav-links li {
+    margin: 0;
+  }
+
+  .slider-container img {
+    max-height: 250px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  main h3 {
+    font-size: 1.5rem;
+  }
+
+  .library-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .library-item h4 {
+    font-size: 0.9rem;
+  }
+
+  .library-item p {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .login-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 0.6rem;
+  }
+
+  .login-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
 display: block;
