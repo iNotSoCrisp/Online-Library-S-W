@@ -86,9 +86,7 @@ header .nav-links a:hover {
 }
 
 /* Pause animation on hover */
-.slider:hover .slider-container {
-  animation-play-state: paused;
-}
+
 
 /* Main Content */
 main {
