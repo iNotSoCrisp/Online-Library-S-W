@@ -283,4 +283,94 @@ p strong {
 .manga-details .icons i:hover {
   color: #f8d210; 
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    background: rgb(255, 121, 0);
+    background: linear-gradient(90deg, rgba(255, 121, 0, 1) 18%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  header .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  section {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  .chapters ul li {
+    font-size: 0.85rem;
+  }
+
+  .reviews .review {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .manga-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .manga-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .manga-details {
+    width: 100%;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .manga-details p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .manga-details .buttons a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .manga-details .icons {
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
 
