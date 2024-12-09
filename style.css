@@ -203,7 +203,8 @@ background-color: #f9f9f9;
   }
 
   header .nav-links {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
     gap: 10px;
   }
