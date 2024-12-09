@@ -234,22 +234,28 @@ background-color: #f9f9f9;
     margin: 0;
   }
 
+/* For devices with a max width of 480px (smartphones) */
+  .slider {
+    height: auto; /* Let the height adjust dynamically */
+    width: 100%; /* Use the full width of the screen */
+  }
+
   .slider-container {
-    width: 100vw; /* Full viewport width */
-    height: auto; /* Adjust automatically to content */
-    animation: scroll 15s linear infinite; /* Adjust speed if needed */
+    width: auto; /* Automatically adjust to the number of items */
+    animation: scroll 15s linear infinite; /* Keep animation smooth */
   }
 
   .slider-container a {
-    width: 90vw; /* Slightly smaller than full width for padding */
+    width: 90%; /* Scale down the links */
     height: auto; /* Maintain aspect ratio */
   }
 
   .slider-container img {
-    width: 90vw; /* Same as anchor width */
-    height: auto; /* Maintain image proportions */
-    object-fit: contain; /* Ensure image fits within the given space */
+    width: 90%; /* Scale the images to fit within the screen */
+    height: auto; /* Maintain their proportions */
+    object-fit: contain; /* Ensure no cropping of images */
   }
+
 
 
   main {
