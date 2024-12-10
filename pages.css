@@ -298,7 +298,7 @@ p strong {
 
   header .logo h1 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   header .nav-links {
@@ -307,7 +307,7 @@ p strong {
     gap: 10px;
   }
 
-  .nav-links li {
+  header .nav-links li {
     margin: 0;
   }
 
